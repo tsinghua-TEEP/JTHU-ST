@@ -56,6 +56,7 @@ The LaTeX template for Journal of Tsinghua University (Science and Technology)]
 \usepackage{calc}
 \usetikzlibrary{calc}
 \usepackage{environ}
+\usepackage[shortlabels]{enumitem}
 
 % \usepackage{bigstrut}
 %     \setlength\bigstrutjot{3pt}
@@ -114,11 +115,11 @@ The LaTeX template for Journal of Tsinghua University (Science and Technology)]
 \renewcommand\section{\@startsection {section}{1}{\z@}%
                                    {1.5ex }%
                                    {1.5ex}%
-                                   {\normalfont\bfseries\hei\sihao}}
+                                   {\normalfont\bfseries\xiaosihao}}
 \renewcommand\subsection{\@startsection {subsection}{1}{\z@}%
                                    {-1pt }%
                                    {1pt}%
-                                   {\normalfont\bfseries\hei\wuhao}}
+                                   {\normalfont\bfseries\wuhao}}
 \renewcommand\subsubsection{\@startsection {subsubsection}{1}{\z@}%
                                    {-1pt }%
                                    {1pt}%
@@ -210,17 +211,17 @@ The LaTeX template for Journal of Tsinghua University (Science and Technology)]
 \newlength{\somelength}
 \settowidth{\somelength}{中图分类号}
 
-{\hei\wuhao \makebox[\widthof{中图分类号}][s]{摘 要}:}  %% 摘要 和  中图分类号 等宽设置  \quad  或者 \hphantom{键词} \phantom{键词} 或者 \makebox 
+{\noindent \hei\wuhao {摘　要}:} 
 {\fang\wuhao 
 \BODY
 }
 
-{\hei\wuhao \makebox[\widthof{中图分类号}][s]{关键词}:} \fang \jbuaaCKeyword
+{\noindent \hei\wuhao {关键词}:} {\fang \jbuaaCKeyword}
 
-{\hei\wuhao \makebox[\widthof{中图分类号}][s]{中图分类号}:} \jbuaaCLCNo
-
-{\hei\wuhao \makebox[\widthof{中图分类号}][s]{文献标识码}: \jbuaaDcode \qquad \qquad \qquad \qquad 文章编号: \jbuaaPaperNo}
-\vspace*{1.3cm}}
+{\noindent {\hei\wuhao {中图分类号}:} {\jbuaaCLCNo \qquad}
+\hei\wuhao \makebox[\widthof{中图分类号}][s]{文献标识码}: \jbuaaDcode \qquad \qquad 
+文章编号: \jbuaaPaperNo}
+\vspace*{1.0cm}}
 \end{center}
 }
 
@@ -269,22 +270,23 @@ The LaTeX template for Journal of Tsinghua University (Science and Technology)]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fancypagestyle{plain}{ \fancyhf{}\vspace{10pt}
 \lhead{}
-\chead{\vspace{0.6cm}\centering{{\CJKfamily{hei}\xiaowuhao 北\ 京\ 航\ 空\ 航\ 天\ 大\ 学\ 学\ 报}\\[-0.5ex]
-{{\xiaowuhao Journal of Beijing University of Aeronautics and Astronautics}}}}
+\chead{\hspace{2.5cm}\vspace{0.1cm}\raggedright{{\xiaowuhao 清华大学学报（自然科学版）}\\[-0.5ex]\hspace{2.5cm}
+{{\xiaowuhao J Tsinghua Univ (Sci \& Technol)}}}}
 \rhead{}
 \lfoot{}
 \cfoot{}
 \rfoot{}
-\renewcommand{\headrule}{%
-\hrule height0.4pt width \headwidth \vskip1.0pt%
-\hrule height0.4pt width \headwidth \vskip-2pt}}
+\renewcommand{\headrule}{}%
+% \hrule height0.4pt width \headwidth \vskip1.0pt%
+% \hrule height0.4pt width \headwidth \vskip-2pt}
+}
 %\renewcommand{\footrulewidth}{0.4pt}
 %\setlength{\hoffset}{0.1pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy} 
 \fancyhf{}
 % \fancyhead[RE]{{\footnotesize 第~xx~卷~~~}} 
-\fancyhead[CE]{{\footnotesize 北京航空航天大学学报}}
+\fancyhead[CE]{{\footnotesize 清\ 华\ 大\ 学\ 学\ 报\ （自\ 然\ 科\ 学\ 版）}}
 \fancyhead[LE,RO]{~~~\footnotesize\thepage ~~~}
 % \fancyhead[LO]{{\footnotesize ~~~第~x~期}}
 \lfoot{}
