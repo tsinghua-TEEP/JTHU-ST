@@ -78,7 +78,7 @@ The LaTeX template for Journal of Tsinghua University (Science and Technology)]
 \newcommand{\kai}{\CJKfamily{kai}}
 \newcommand{\fang}{\CJKfamily{fang}}
   
-\newfontfamily\CalibriFont{Calibri.ttf}
+\newfontfamily\CalibriFont{calibri.ttf}
 \newfontfamily\TimesNMFont{Times New Roman}
   
 \newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}      % 字号设置
