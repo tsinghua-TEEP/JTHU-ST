@@ -1,10 +1,3 @@
-[JTHU-ST](https://github.com/tsinghua-TEEP/JTHU-ST) is licensed under CC BY 4.0 
-
-<details>
-  <summary>Legal Code</summary>
-
-```plaintext
-
 Creative Commons Attribution 4.0 International Public License
 
 By exercising the Licensed Rights (defined below), You accept and agree
@@ -323,11 +316,5 @@ Section 8 -- Interpretation.
      that apply to the Licensor or You, including from the legal
      processes of any jurisdiction or authority.
 
-```
-
-</details>
-
 For more information, please see
 <https://creativecommons.org/licenses/by/4.0/>
-
- © 2024 tsinghua-TEEP Contributors, CC BY 4.0
